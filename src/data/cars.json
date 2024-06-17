@@ -1,0 +1,14 @@
+[
+  {
+    "id":  0,
+    "bodyTypeId": 1,
+    "makeId": 1,
+    "model": "TDI",
+    "fuelTypeId": 1,
+    "gearTypeId": 1,
+    "power": "90kW",
+    "price": "21000$",
+    "desc": "lorem",
+    "imgURL": "https://www.motortrend.com/uploads/2023/02/Plugin-Hybrid-SUVs.jpg?w=512&width=512&q=75&format=webp"
+  }
+]

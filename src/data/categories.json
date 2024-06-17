@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "SUV",
+    "desc": "Far and away the most popular body style, SUVs are prized for their versatility. Like other types of cars, sport utility vehicles have a complex history. Originally truck-based, full-frame vehicles built primarily to traverse rough terrain and hold lots of stuff (leaving ride refinement and amenities for other styles), most SUVs are now unibody vehicles like sedans and hatchbacks. Even so, the adventurous go-anywhere nature of these early SUVs permeates their image today. Body-on-frame SUVs still exist, but the most common SUVs on the road today (sometimes referred to as crossovers) have tons of features and offer superior on-road comfort.",
+    "imgURL": "https://www.motortrend.com/uploads/2023/02/Plugin-Hybrid-SUVs.jpg?w=512&width=512&q=75&format=webp"
+  },
+  {
+    "id": 2,
+    "name": "Sedan",
+    "desc": "Before crossover SUVs took over the road, the four-door sedan was the predominant vehicle type. Traditionally, sedans are three-box designs, with the engine in front, cabin in the center, and trunk in the rear. Chances are if you ask anyone born before 2008 to draw a generic car, this shape is what they'll present you. Sedans have fallen out of favor with buyers (and manufacturers) as SUVs have risen to prominence, but a few remain, especially those being sold cheaply to fleets or those with high performance.",
+    "imgURL": "https://www.motortrend.com/uploads/sites/5/2017/02/High-Performance-Sports-Sedans-front-three-quarter-02-e1488226122368.jpg?w=384&width=384&q=75&format=webp"
+  },
+  {
+    "id": 3,
+    "name": "Truck",
+    "desc": "While SUVs have the largest number of variants on the roads, truck models outsell them in the U.S. Historically pickup trucks were work vehicles that could get a crew to a job site and bring all their gear with them in an open bed behind the cab. Just as SUVs acquired a reputation for adventure, pickups became a symbol of hard work and practicality ever more people wanted to be associated with. These days pickup trucks, with family-friendly quad-cab body styles, are the most popular vehicle categories on the road and offer far better efficiency, comfort, and capability than their forebears.",
+    "imgURL": "https://www.motortrend.com/uploads/2023/07/Best-Resale-Value-Trucks-2023-1.jpg?w=512&width=512&q=75&format=webp"
+  },
+  {
+    "id": 4,
+    "name": "Hatchback",
+    "desc": "Stereotypically, hatchbacks are cheap and cheerful, practical, and petite. In reality, despite the shift toward ever-larger crossover SUVs, a modern compact hatchback offers much of the utility of a similarly sized SUV at a lower price point with greater efficiency. Some newer compact crossovers have begun to blur the line between large hatchback and small SUV. Wagons are car models with that same practicality focus, but they generally appear longer and less upright. Shooting brakes are coupe-like vehicles with a wagon/hatchback rear.",
+    "imgURL": "https://www.motortrend.com/uploads/sites/5/2020/08/Best-Compact-Hatchbacks-To-Buy-In-2020.jpg?w=512&width=512&q=75&format=webp"
+  },
+  {
+    "id": 5,
+    "name": "Coupe",
+    "desc": "Back when four-door sedans were the practical family option, two-door coupes were the sportier, fashion-forward option. As the market moved toward larger vehicles in the 21st century, the often prettier yet less practical coupes became less popular to the point where the only remaining examples were performance cars. As vehicles with only two doors tend to be stiffer and lighter, high-performance cars have rarely been anything other than coupes. Muscle cars, sports cars, hypercars, and grand tourers all have their roots with two doors and are rarely seen with other layouts. Automakers sometimes apply the term \"coupe\" to SUVs and four-door sedans with more rakish, sporty, sleeker rooflines.",
+    "imgURL": "https://www.motortrend.com/uploads/sites/5/2010/12/v-6-coupe-comparison.jpg?w=512&width=512&q=75&format=webp"
+  },
+  {
+    "id": 6,
+    "name": "Wagon",
+    "desc": "A station wagon (US, also wagon) or estate car (UK, also estate) is an automotive body-style variant of a sedan with its roof extended rearward over a shared passenger/cargo volume with access at the back via a third or fifth door (the liftgate, or tailgate), instead of a trunk/boot lid.",
+    "imgURL": "https://www.motortrend.com/uploads/sites/21/2020/08/009-2021-dodge-durango-line-up.jpg?interpolation=lanczos-none&amp;fit=around|660:371?w=512&width=512&q=75&format=webp"
+  },
+  {
+    "id": 7,
+    "name": "Minivan",
+    "desc": "While coupes are about style over practicality, vans are the opposite. These workhorses range from frame-based cargo vans to sumptuously comfortable minivans. The latter was once the family vehicle of choice before the SUV's rise. Features like fold-away or configurable seating and sliding doors make these vehicles great for moving people and gear. In general, they make the most of their footprint, which leads to a different kind of style all their own.",
+    "imgURL": "https://www.motortrend.com/uploads/sites/5/2015/01/2014-2015-midsize-family-vans-front-three-quarter-turn-02.jpg?w=512&width=512&q=75&format=webp"
+  },
+  {
+    "id": 8,
+    "name": "Van",
+    "desc": "A van is a type of road vehicle used for transporting goods or people. Depending on the type of van, it can be bigger or smaller than a pickup truck and SUV, and bigger than a common car. There is some variation in the scope of the word across the different English-speaking countries.",
+    "imgURL": "https://carfromjapan.com/wp-content/uploads/2021/04/Nissan_NV200_Evalia.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Electric",
+    "desc": "For now we treat fully electric cars as their own category, but all indications point to just about every type of car going electric at some point in the next few decades. Electric vehicles, or EVs, take full advantage of the dramatic efficiency advantages of electric motors. EVs have already begun to make every car type better: They are quicker yet more efficient, much cheaper to \"fuel\" yet capable of charging at home, and allow for inventive packaging solutions that enhance interior space, safety, and handling. Lingering challenges include the high cost and weight of batteries and the lack of common reliable charging infrastructure, though these are all in the process of being addressed by the industry as a whole.",
+    "imgURL": "https://www.motortrend.com/uploads/sites/5/2019/12/Longest-Range-Electric-Cars-of-2020.jpg?w=512&width=512&q=75&format=webp"
+  },
+  {
+    "id": 10,
+    "name": "Hybrid",
+    "desc": "A hybrid is any vehicle that is propelled by two different sources of energy, generally electricity and gasoline. These vehicles generally use the gasoline engine to charge batteries that the electric motors draw power from, though plug-in hybrids can also charge from a wall socket or charging station just like a fully electric car. Electric motors are far more efficient than internal combustion engines, so when a hybrid vehicle leans on that electric propulsion, it can achieve great fuel economy. Many hybrids can run exclusively on electric power alone for short distances, allowing one to run errands without using any gasoline at all.",
+    "imgURL": "https://www.motortrend.com/uploads/sites/5/2013/04/Toyota-and-Lexus-Hybrids.jpg?w=512&width=512&q=75&format=webp"
+  },
+  {
+    "id": 11,
+    "name": "Luxury",
+    "desc": "A higher price point in the market might differentiate a luxury car from a more utilitarian sedan or hatchback. However, the true mark of a luxury car type is that it makes life easier for its occupants through a series of features not yet seen on vehicles for the masses. Various luxury brands have had mixed success with this over the years, but invariably technology that winds up in everything starts in these higher-end vehicles, with today's likely future-tech candidate being the semi-autonomous driving capabilities being developed in high-end vehicles.",
+    "imgURL": "https://www.motortrend.com/uploads/2022/05/Best-Used-Luxury-Cars-Cover.jpg?w=512&width=512&q=75&format=webp"
+  },
+  {
+    "id": 12,
+    "name": "Sport",
+    "desc": "While everyone needs a method to move, many want that method to move their heart as well as their body. Sports cars are styled and built to bring joy to drivers (and onlookers). That joy can't be easily replicated by more practical vehicles. Although their number has shrunk, accessibly priced sports cars continue to exist. These types of cars make up a tiny fraction of the overall market but can be further subdivided into vehicles that match drivers' tastes. Classical sports cars are lightweight and agile scalpels, muscle cars bring down the hammer with power and attitude, and supercars demonstrate the extremes of performance and desirability.",
+    "imgURL": "https://www.motortrend.com/uploads/sites/25/2017/06/2017-Toyota-86-vs-2017-Mazda-MX-5-Miata-RF-Head-2-Head-2.jpg?w=512&width=512&q=75&format=webp"
+  },
+  {
+    "id": 13,
+    "name": "Convertible",
+    "desc": "This car body style allows you to drop the top, stowing the roof for wind-in-the-hair bliss when the weather allows for it. Some convertibles employ a traditional fabric or vinyl roof, while others with folding hard tops use sheetmetal origami to let the sunlight in. The most common kinds of car types with convertible tops are two-doors and sports cars, though SUVs and pickup trucks with soft tops designed to be dropped are also available.",
+    "imgURL": "https://www.motortrend.com/uploads/sites/5/2013/06/Luxury-Convertible-Comparison-rear-views-in-motion.jpg?w=512&width=512&q=75&format=webp"
+  }
+]

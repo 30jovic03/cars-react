@@ -1,0 +1,152 @@
+[
+  {
+    "id":  0,
+    "name": "Alfa Romeo",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Falfa_romeo.png&w=256&q=75"
+  },
+  {
+    "id":  1,
+    "name": "Aston Martin",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Faston_martin.png&w=256&q=75"
+  },
+  {
+    "id":  2,
+    "name": "Audi",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Faudi.png&w=256&q=75"
+  },
+  {
+    "id":  3,
+    "name": "Bentley",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fbentley.png&w=256&q=75"
+  },
+  {
+    "id":  4,
+    "name": "BMW",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fbmw.png&w=256&q=75"
+  },
+  {
+    "id":  5,
+    "name": "Bugatti",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fbugatti.png&w=256&q=75"
+  },
+  {
+    "id":  6,
+    "name": "Cadillac",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fcadillac.png&w=256&q=75"
+  },
+  {
+    "id":  7,
+    "name": "Chevrolet",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fchevrolet.png&w=256&q=75"
+  },
+  {
+    "id":  8,
+    "name": "Dodge",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fdodge.png&w=256&q=75"
+  },
+  {
+    "id":  9,
+    "name": "Ferrari",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fferrari.png&w=256&q=75"
+  },
+  {
+    "id":  10,
+    "name": "FIAT",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Ffiat.png&w=256&q=75"
+  },
+  {
+    "id":  11,
+    "name": "Ford",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fford.png&w=256&q=75"
+  },
+  {
+    "id":  12,
+    "name": "Honda",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fhonda.png&w=256&q=75"
+  },
+  {
+    "id":  13,
+    "name": "Hyundai",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fhyundai.png&w=256&q=75"
+  },
+  {
+    "id":  14,
+    "name": "Jaguar",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fjaguar.png&w=256&q=75"
+  },
+  {
+    "id":  15,
+    "name": "Jeep",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fjeep.png&w=256&q=75"
+  },
+  {
+    "id":  16,
+    "name": "Kia",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fkia.png&w=256&q=75"
+  },
+  {
+    "id":  17,
+    "name": "Lamborghini",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Flamborghini.png&w=256&q=75"
+  },
+  {
+    "id":  18,
+    "name": "Land Rover",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fland_rover.png&w=256&q=75"
+  },
+  {
+    "id":  19,
+    "name": "Mazda",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fmazda.png&w=256&q=75"
+  },
+  {
+    "id":  20,
+    "name": "Mercedes-Benz",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fmercedes_benz.png&w=256&q=75"
+  },
+  {
+    "id":  21,
+    "name": "MINI",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fmini.png&w=256&q=75"
+  },
+  {
+    "id":  22,
+    "name": "Mitsubishi",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fmitsubishi.png&w=256&q=75"
+  },
+  {
+    "id":  23,
+    "name": "Nissan",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fnissan.png&w=256&q=75"
+  },
+  {
+    "id":  24,
+    "name": "Porsche",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fporsche.png&w=256&q=75"
+  },
+  {
+    "id":  25,
+    "name": "Subaru",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fsubaru.png&w=256&q=75"
+  },
+  {
+    "id":  26,
+    "name": "Tesla",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Ftesla.png&w=256&q=75"
+  },
+  {
+    "id":  27,
+    "name": "Toyota",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Ftoyota.png&w=256&q=75"
+  },
+  {
+    "id":  28,
+    "name": "Volkswagen",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fvolkswagen.png&w=256&q=75"
+  },
+  {
+    "id":  29,
+    "name": "Volvo",
+    "imgURL": "https://www.motortrend.com/_next/image/?url=https%3A%2F%2Fwww.motortrend.com%2Fuploads%2Fmakes%2Fvolvo.png&w=256&q=75"
+  }
+]

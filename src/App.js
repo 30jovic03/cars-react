@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import './App.css';
+import Header from './shared/Header';
+import ScrollToTop from './shared/ScrollToTop';
+import HomePage from './components/HomePage';
+import NewsPage from './components/NewsPage';
+import CategoryPage from './components/CategoryPage';
+import ReviewsPage from './components/ReviewsPage';
+import BuyersGuidePage from './components/BuyersGuidePage';
+import CarsPage from './components/CarsPage';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Router>
+        <ScrollToTop />
+        <Header />
+        <Routes>
+          <Route exact path="/" element={ <HomePage/> } />
+          <Route path="/category/:cId" element={ <CategoryPage /> } />
+          <Route path="/news/:nId" element={ <NewsPage /> } />
+          <Route path="/reviews" element={ <ReviewsPage /> } />
+          <Route path="/buyers-guide" element={ <BuyersGuidePage /> } />
+          <Route path="/search-car" element={ <CarsPage /> } />
+        </Routes>
+      </Router>
+    </>
+  )
 }
-
-export default App;

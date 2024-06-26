@@ -1,14 +1,14 @@
 import { Link, useParams } from "react-router-dom";
 import { Box, Container, Grid, ListItem } from "@mui/material";
 
-import useMockData from "../hooks/useMockData";
+import useData from "../hooks/useData";
 import NewsCard from "../shared/NewsCard";
 
 export default function NewsPage() {
   const { nId } = useParams();
-  const { news } = useMockData('news');
+  const { news } = useData('news');
 
-  const article = news.find(cat => cat.id === +nId);
+  const article = news.find(cat => cat.id === nId);
 
   return(
     <>

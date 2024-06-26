@@ -1,14 +1,13 @@
 import { Container, Grid, ListItem } from "@mui/material";
 import CategoryMenu from "../shared/CategoryMenu";
 import NewsCard from "../shared/NewsCard";
-import useMockData from "../hooks/useMockData";
+import useData from "../hooks/useData";
 import { Link } from "react-router-dom";
 import MakeMenu from "../shared/MakeMenu";
 
 export default function HomePage() {
   
-  let { news } = useMockData('news');
-  news = news.slice(0, 3);
+  let { news } = useData('news');
 
   return(
     <>
@@ -23,7 +22,7 @@ export default function HomePage() {
         <Container>
           <h2>Latest news</h2>
           <Grid container spacing={2} pb={3}>
-            {news.map(dataItem => {
+            {news.slice(0, 3).map(dataItem => {
               return (
                 <Grid item xs={4} key={dataItem.id}>
                   <ListItem>

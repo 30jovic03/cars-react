@@ -1,9 +1,9 @@
 import { Stack } from "@mui/material";
-import useMockData from "../hooks/useMockData";
+import useData from "../hooks/useData";
 import { Link } from "react-router-dom";
 
 export default function CategoryMenu() {
-  const { categories } = useMockData('categories');
+  const { categories } = useData('categories');
 
   return(
     <>

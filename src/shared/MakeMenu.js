@@ -1,9 +1,10 @@
 import { Stack } from "@mui/material";
-import useMockData from "../hooks/useMockData";
 import { Link } from "react-router-dom";
 
+import useData from "../hooks/useData";
+
 export default function MakeMenu() {
-  const { makes } = useMockData('makes');
+  const { makes } = useData('makes');
 
   return(
     <>

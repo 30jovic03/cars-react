@@ -2,13 +2,13 @@ import { useParams } from "react-router-dom";
 import { Box, Container } from "@mui/material";
 
 import CategoryMenu from "../shared/CategoryMenu";
-import useMockData from "../hooks/useMockData";
+import useData from "../hooks/useData";
 
 export default function CategoryPage() {
   const { cId } = useParams();
-  const { categories } = useMockData('categories');
+  const { categories } = useData('categories');
 
-  const category = categories.find(cat => cat.id === +cId);
+  const category = categories.find(cat => cat.id === cId);
   
   return(
     <Container>

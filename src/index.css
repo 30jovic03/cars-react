@@ -101,6 +101,23 @@ width: 60px;
   width: 100%;
 }
 
+/* cars page */
+.carCardPrice {
+  color: #1976d2;
+  border: 1px solid #1976d2;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+#carModal span {
+  color: #000;
+}
+.modalCarImage {
+  width: 650px;
+}
+.modalCarImage img {
+  width: 100%;
+}
+
 /* BuyersGuide page */
 .buyers-guide-title h2 {
   font-family: "Playfair Display", serif;

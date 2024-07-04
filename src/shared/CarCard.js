@@ -3,26 +3,32 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import { Box } from '@mui/material';
 
 export default function CarCard({car}) {
 
   return (
-    <Card sx={{ display: 'flex' }} style={{marginBottom: '10px', border: '2px solid #eee'}}>
+    <Card sx={{ display: 'flex', width: '100%' }} style={{marginBottom: '10px', border: '2px solid #eee'}}>
       <CardMedia
         component="img"
-        sx={{ width: 250, height: 250 }}
+        sx={{ width: 150, height: 150 }}
         image={car.imgURL}
         alt="car image"
       />
-      <CardContent sx={{ flex: '1 0 auto' }} style={{width: '100%'}}>
-        <Typography component="div" variant="h5">
-          {car.makeId + ', '+ car.model}
-        </Typography>
-        <Typography variant="subtitle1" color="text.secondary" component="div">
-          {car.price}
-        </Typography>
+      <CardContent sx={{ flex: '1 0 auto' }}>
+        <Box display= 'flex' justifyContent= 'space-between'>
+          <Typography component="div" variant="h5">
+            {car.make + ', '+ car.model}
+          </Typography>
+          <Typography variant="h5" className='carCardPrice'>
+            {car.price}
+          </Typography>
+        </Box>
         <Typography variant="subtitle1" color="text.secondary" component="div">
           {car.power}
+        </Typography>
+        <Typography variant="subtitle1" color="text.secondary" component="div">
+          {car.fuelType}
         </Typography>
       </CardContent>
     </Card>

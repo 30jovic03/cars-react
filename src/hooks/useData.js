@@ -41,8 +41,8 @@ const useData = (collection) => {
         firestore.getDocuments('news').then((docs) => setNews(docs.sort((a,b)=>(new Date(a.date) < new Date(b.date)) ? 1 : (new Date(a.date) > new Date(b.date)) ? -1 : 0)));
         break;
       case 'cars':
-        // firestore.getDocuments('cars').then((docs) => setCars(docs.sort((a,b)=>(a.name > b.name) ? 1 : (a.name < b.name) ? -1 : 0)));
-        setCars(dataCars);
+        firestore.getDocuments('cars').then((docs) => setCars(docs.sort((a,b)=>(a.name > b.name) ? 1 : (a.name < b.name) ? -1 : 0)));
+        // setCars(dataCars);
         break;
       default:
         // do nothing

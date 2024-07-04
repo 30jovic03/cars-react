@@ -21,7 +21,7 @@ const pages = [
   },
   {
     name: "reviews",
-    path: "reviews"
+    path: "reviews/T7hUNaCPbgQmjilaE8G4"
   },
   {
     name: "cars",

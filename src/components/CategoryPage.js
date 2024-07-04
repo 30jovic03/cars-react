@@ -12,7 +12,7 @@ export default function CategoryPage() {
   
   return(
     <Container>
-      <h2>All Categories:</h2>
+      <h2>Popular Categories:</h2>
       <CategoryMenu></CategoryMenu>
       <Box py={5}>
         {category && (

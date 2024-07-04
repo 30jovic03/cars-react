@@ -22,7 +22,7 @@ export default function App() {
           <Route exact path="/" element={ <HomePage/> } />
           <Route path="/category/:cId" element={ <CategoryPage /> } />
           <Route path="/news/:nId" element={ <NewsPage /> } />
-          <Route path="/reviews" element={ <ReviewsPage /> } />
+          <Route path="/reviews/:rId" element={ <ReviewsPage /> } />
           <Route path="/cars" element={ <CarsPage /> } />
           <Route path="/buyers-guide" element={ <BuyersGuidePage /> } />
           <Route path="/user-dashboard" element={ <UserPage /> } />

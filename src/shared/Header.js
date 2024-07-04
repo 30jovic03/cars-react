@@ -17,11 +17,15 @@ import { Link } from 'react-router-dom';
 const pages = [
   {
     name: "news",
-    path: "news/1"
+    path: "news/ZQxmReN0xLaA78Q7rWbl"
   },
   {
     name: "reviews",
     path: "reviews"
+  },
+  {
+    name: "cars",
+    path: "cars"
   },
   {
     name: "buyer's guide",
@@ -32,12 +36,12 @@ const pages = [
     path: "https://www.motortrend.com/plus/magazines/"
   }
 ];
-// https://www.motortrend.com/plus/magazines/ ***** link za Magazines
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export default function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const [user, setUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -50,8 +54,9 @@ export default function Header() {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
+  const handleCloseUserMenu = (newUser) => {
     setAnchorElUser(null);
+    setUser(newUser);
   };
 
   return (
@@ -120,9 +125,9 @@ export default function Header() {
             <LogoIcon></LogoIcon>
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            <Tooltip title="User">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt={user} src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -139,13 +144,33 @@ export default function Header() {
                 horizontal: 'right',
               }}
               open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
+              onClose={()=>handleCloseUserMenu(null)}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem key={1} onClick={()=>handleCloseUserMenu('User')}>
+                <Typography textAlign="center">
+                  <Link to={'user-dashboard'} style={{textDecoration: "none", color: "black"}}>
+                    {'User'}
+                  </Link>
+                </Typography>
+              </MenuItem>
+              <MenuItem key={2} onClick={()=>handleCloseUserMenu('Admin')}>
+                <Typography textAlign="center">
+                  <Link to={'admin-dashboard'} style={{textDecoration: "none", color: "black"}}>
+                    {'Admin'}
+                  </Link>
+                </Typography>
+              </MenuItem>
+              { user ?
+                (
+                  <MenuItem key={3} onClick={()=>handleCloseUserMenu(null)}>
+                    <Typography textAlign="center">
+                      <Link to={'/'} style={{textDecoration: "none", color: "black"}}>
+                        {'Logout'}
+                      </Link>
+                    </Typography>
+                  </MenuItem>
+                ) : ( null )
+              }
             </Menu>
           </Box>
         </Toolbar>

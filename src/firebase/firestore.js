@@ -1,4 +1,4 @@
-import { collection, addDoc, getDocs } from "firebase/firestore"; 
+import { collection, addDoc, deleteDoc, updateDoc, getDocs,doc } from "firebase/firestore"; 
 import { firestore } from "../firebase/config";
 
 const addDocument = async (collectionName, document) => {
@@ -6,8 +6,33 @@ const addDocument = async (collectionName, document) => {
     const docRef = await addDoc(collection(firestore, collectionName), document);
 
     console.log("Document written with ID: ", docRef.id);
+    return docRef;
   } catch (e) {
     console.error("Error adding document: ", e);
+  }
+}
+
+const deleteDocument = async (collectionName, documentId) => {
+  try {
+    const docRef = doc(firestore, collectionName, documentId);
+    await deleteDoc(docRef);
+
+    console.log("Deleted document with ID: ", docRef.id);
+    return docRef;
+  } catch (e) {
+    console.error("Error deleting document: ", e);
+  }
+}
+
+const editDocument = async (collectionName, documentId, document) => {
+  try {
+    const docRef = doc(firestore, collectionName, documentId);
+    await updateDoc(docRef, document);
+
+    console.log("Updated document with ID: ", docRef.id);
+    return docRef;
+  } catch (e) {
+    console.error("Error editing document: ", e);
   }
 }
 
@@ -26,4 +51,4 @@ const getDocuments = async (collectionName) => {
   }
 }
 
-export { addDocument, getDocuments };
+export { addDocument, deleteDocument, editDocument, getDocuments };

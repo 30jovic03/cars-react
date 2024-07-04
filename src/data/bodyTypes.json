@@ -1,0 +1,46 @@
+[
+  {
+    "id": 0,
+    "type": "SUV"
+  },
+  {
+    "id": 1,
+    "type": "Sedan"
+  },
+  {
+    "id": 2,
+    "type": "Truck"
+  },
+  {
+    "id": 3,
+    "type": "Hatchback"
+  },
+  {
+    "id": 4,
+    "type": "Coupe"
+  },
+  {
+    "id": 5,
+    "type": "Wagon"
+  },
+  {
+    "id": 6,
+    "type": "Minivan"
+  },
+  {
+    "id": 7,
+    "type": "Van"
+  },
+  {
+    "id": 8,
+    "type": "Luxury"
+  },
+  {
+    "id": 9,
+    "type": "Sport"
+  },
+  {
+    "id": 10,
+    "type": "Convertible"
+  }
+]

@@ -31,7 +31,7 @@ export default function MakeMenu() {
 
 function MakeMenuItem({make}) {
   return(
-    <Link to={`/search-car?make=${make.id}`} style={{textDecoration: "none"}}>
+    <Link to={`/cars?make=${make.name}`} style={{textDecoration: "none"}}>
       <div className="make-item">
         <div className="make-item-img">
           <img src={`${make.imgURL}`} alt="make logo"/>

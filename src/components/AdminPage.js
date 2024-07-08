@@ -46,19 +46,19 @@ function AdminTabs() {
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <TabList onChange={handleTabChange} aria-label="lab API tabs example">
             <Tab label="Cars" value="1" />
-            <Tab label="News" value="3" />
-            <Tab label="Reviews" value="4" />
-            <Tab label="Makes" value="2" />
+            <Tab label="News" value="2" />
+            <Tab label="Reviews" value="3" />
+            <Tab label="Makes" value="4" />
             <Tab label="Categories" value="5" />
           </TabList>
         </Box>
         <TabPanel value="1">
           <CarsTab></CarsTab>
         </TabPanel>
-        <TabPanel value="2">Coming soon...</TabPanel>
-        <TabPanel value="3">Coming soon...</TabPanel>
-        <TabPanel value="4">Coming soon...</TabPanel>
-        <TabPanel value="5">Coming soon...</TabPanel>
+        <TabPanel value="2">News tab coming soon...</TabPanel>
+        <TabPanel value="3">Reviews tab coming soon...</TabPanel>
+        <TabPanel value="4">Makes tab coming soon...</TabPanel>
+        <TabPanel value="5">Categories tab coming soon...</TabPanel>
       </TabContext>
     </Box>
   );
@@ -67,11 +67,11 @@ function AdminTabs() {
 function CarsTab() {
   const defaultCarValues = {
     id:  "",
-    bodyTypeId: "",
-    makeId: "",
+    bodyType: "",
+    make: "",
     model: "",
-    fuelTypeId: "",
-    gearTypeId: "",
+    fuelType: "",
+    gearType: "",
     power: "",
     year: "",
     desc: "",
@@ -163,29 +163,29 @@ function CarsTab() {
               <Grid container spacing={1}>
                 <Grid item xs={12} md={6} display="flex" flexDirection="column">
                   <TextField
-                    id="bodyTypeId"
+                    id="bodyType"
                     select
                     label="Body Type"
-                    value={getValues("bodyTypeId")}
-                    {...register("bodyTypeId")}
+                    value={getValues("bodyType")}
+                    {...register("bodyType")}
                     style={{marginTop: "10px"}}
                   >
                     {bodyTypes?.map((option) => (
-                      <MenuItem key={option.id} value={option.id}>
+                      <MenuItem key={option.id} value={option.type}>
                         {option.type}
                       </MenuItem>
                     ))}
                   </TextField>
                   <TextField my={2}
-                    id="makeId"
+                    id="make"
                     select
                     label="Make"
-                    value={getValues("makeId")}
-                    {...register("makeId")}
+                    value={getValues("make")}
+                    {...register("make")}
                     style={{marginTop: "10px"}}
                   >
                     {makes.length && makes.map((option) => (
-                      <MenuItem key={option.id} value={option.id}>
+                      <MenuItem key={option.id} value={option.name}>
                         {option.name}
                       </MenuItem>
                     ))}
@@ -200,29 +200,29 @@ function CarsTab() {
                     style={{marginTop: "10px"}}
                   />
                   <TextField
-                    id="fuelTypeId"
+                    id="fuelType"
                     select
                     label="Fuel Type"
-                    value={getValues("fuelTypeId")}
-                    {...register("fuelTypeId")}
+                    value={getValues("fuelType")}
+                    {...register("fuelType")}
                     style={{marginTop: "10px"}}
                   >
                     {fuelTypes.map((option) => (
-                      <MenuItem key={option.id} value={option.id}>
+                      <MenuItem key={option.id} value={option.type}>
                         {option.type}
                       </MenuItem>
                     ))}
                   </TextField>
                   <TextField
-                    id="gearTypeId"
+                    id="gearType"
                     select
                     label="Gear Type"
-                    value={getValues("gearTypeId")}
-                    {...register("gearTypeId")}
+                    value={getValues("gearType")}
+                    {...register("gearType")}
                     style={{marginTop: "10px"}}
                   >
                     {gearTypes.map((option) => (
-                      <MenuItem key={option.id} value={option.id}>
+                      <MenuItem key={option.id} value={option.type}>
                         {option.type}
                       </MenuItem>
                     ))}
@@ -309,12 +309,12 @@ function CarsTab() {
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
                 <TableCell component="th" scope="row">
-                  {makes.length && makes.find(item=>item.id === car.makeId).name}
+                  {car.make}
                 </TableCell>
                 <TableCell>{car.model}</TableCell>
-                <TableCell>{bodyTypes.find(item=>item.id === car.bodyTypeId).type}</TableCell>
-                <TableCell>{fuelTypes.find(item=>item.id === car.fuelTypeId).type}</TableCell>
-                <TableCell>{gearTypes.find(item=>item.id === car.gearTypeId).type}</TableCell>
+                <TableCell>{car.bodyType}</TableCell>
+                <TableCell>{car.fuelType}</TableCell>
+                <TableCell>{car.gearType}</TableCell>
                 <TableCell>{car.power}</TableCell>
                 <TableCell>{car.year}</TableCell>
                 <TableCell>

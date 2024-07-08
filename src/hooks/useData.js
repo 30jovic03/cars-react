@@ -7,7 +7,7 @@ import dataGearTypes from '../data/gearTypes.json';
 import dataBodyTypes from '../data/bodyTypes.json';
 import dataCategories from '../data/categories.json';
 import dataMakes from '../data/makes.json';
-import dataCars from '../data/cars.json';
+// import dataCars from '../data/cars.json';
 
 const useData = (collection) => {
   const [fuelTypes, setFuelTypes] = useState([]);

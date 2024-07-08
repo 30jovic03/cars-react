@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import ScrollToTop from './shared/ScrollToTop';
 import Header from './shared/Header';
+import Footer from './shared/Footer';
 import HomePage from './components/HomePage';
 import CategoryPage from './components/CategoryPage';
 import NewsPage from './components/NewsPage';
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/user-dashboard" element={ <UserPage /> } />
           <Route path="/admin-dashboard" element={ <AdminPage /> } />
         </Routes>
+        <Footer />
       </Router>
     </>
   )

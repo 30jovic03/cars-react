@@ -8,7 +8,7 @@ export default function MakeMenu() {
 
   return(
     <>
-      <div className="makes">
+      <div style={{paddingBottom: "20px"}}>
         <Stack
                 direction="row"
                 justifyContent="flex-start"

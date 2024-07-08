@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -11,31 +13,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import LogoIcon from './LogoIcon';
-import { Link } from 'react-router-dom';
 
-const pages = [
-  {
-    name: "news",
-    path: "news/ZQxmReN0xLaA78Q7rWbl"
-  },
-  {
-    name: "reviews",
-    path: "reviews/T7hUNaCPbgQmjilaE8G4"
-  },
-  {
-    name: "cars",
-    path: "cars"
-  },
-  {
-    name: "buyer's guide",
-    path: "buyers-guide"
-  },
-  {
-    name: "magazines",
-    path: "https://www.motortrend.com/plus/magazines/"
-  }
-];
+import LogoIcon from './LogoIcon';
+import NavLinks from '../data/navLinks.json';
 
 export default function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -97,7 +77,7 @@ export default function Header() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {NavLinks.map((page) => (
                 <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
                     <Link to={page.path} style={{textDecoration: "none", color: "black", textTransform: "uppercase"}}>
@@ -109,7 +89,7 @@ export default function Header() {
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {NavLinks.map((page) => (
               <Button
                 key={page.name}
                 onClick={handleCloseNavMenu}
@@ -125,7 +105,7 @@ export default function Header() {
             <LogoIcon></LogoIcon>
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="User">
+            <Tooltip title={user ? user : "Select user"}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt={user} src="/static/images/avatar/2.jpg" />
               </IconButton>

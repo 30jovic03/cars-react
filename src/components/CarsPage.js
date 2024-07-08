@@ -95,7 +95,7 @@ export default function CarsPage() {
   }
 
   return(
-    <Container>
+    <Container style={{paddingBottom: "30px"}}>
       <h2>Cars</h2>
       <Grid container spacing={5}>
         <Grid item xs={4}>

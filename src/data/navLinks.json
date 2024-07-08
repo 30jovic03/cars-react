@@ -1,0 +1,22 @@
+[
+  {
+    "name": "news",
+    "path": "news/ZQxmReN0xLaA78Q7rWbl"
+  },
+  {
+    "name": "reviews",
+    "path": "reviews/T7hUNaCPbgQmjilaE8G4"
+  },
+  {
+    "name": "cars",
+    "path": "cars"
+  },
+  {
+    "name": "buyer's guide",
+    "path": "buyers-guide"
+  },
+  {
+    "name": "magazines",
+    "path": "https://www.motortrend.com/plus/magazines/"
+  }
+]

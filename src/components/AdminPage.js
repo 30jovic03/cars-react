@@ -41,7 +41,7 @@ function AdminTabs() {
   };
 
   return (
-    <Box sx={{ width: '100%', typography: 'body1' }}>
+    <Box sx={{ width: '100%', minHeight: '70vh', typography: 'body1' }}>
       <TabContext value={tabValue}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <TabList onChange={handleTabChange} aria-label="lab API tabs example">

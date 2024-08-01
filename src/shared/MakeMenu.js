@@ -1,6 +1,5 @@
 import { Stack } from "@mui/material";
-import { Link } from "react-router-dom";
-
+import MakeButton from "./MakeButton";
 import useData from "../hooks/useData";
 
 export default function MakeMenu() {
@@ -20,26 +19,11 @@ export default function MakeMenu() {
               >
                 {makes.map(make => {
             return (
-                <MakeMenuItem key={make.id} make={make} />
+                <MakeButton key={make.id} make={make} />
             )
           })}
         </Stack>
       </div>
     </>
-  )
-}
-
-function MakeMenuItem({make}) {
-  return(
-    <Link to={`/cars?make=${make.name}`} style={{textDecoration: "none"}}>
-      <div className="make-item">
-        <div className="make-item-img">
-          <img src={`${make.imgURL}`} alt="make logo"/>
-        </div>
-        <div className="make-item-name">
-          {make.name}
-        </div>
-      </div>
-    </Link>
   )
 }

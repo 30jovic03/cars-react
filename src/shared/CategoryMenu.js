@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material";
+import CategoryButton from "./CategoryButton";
 import useData from "../hooks/useData";
-import { Link } from "react-router-dom";
 
 export default function CategoryMenu() {
   const { categories } = useData('categories');
@@ -18,21 +18,11 @@ export default function CategoryMenu() {
               >
                 {categories.map(cat => {
             return (
-                <CategoryMenuItem key={cat.id} cat={cat} />
+                <CategoryButton key={cat.id} cat={cat} />
             )
           })}
         </Stack>
       </div>
     </>
-  )
-}
-
-function CategoryMenuItem({cat}) {
-  return(
-    <Link to={`/category/${cat.id}`}>
-      <button className="category-btn">
-        {cat.name}
-      </button>
-    </Link>
   )
 }
